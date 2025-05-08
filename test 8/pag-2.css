@@ -1,0 +1,36 @@
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+body {
+    background-image:linear-gradient(#F2ECCE,#BFBAA3);
+    background-attachment: fixed;
+    border-radius: 20px;
+    width: 600px;
+    padding: 15px;
+    margin: auto;
+
+}
+main{
+    background-color:#969078 ;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+h1{
+    color: #F2ECCE;
+}
+h2{
+    color: #F2ECCE;
+}
+p{
+    color: aliceblue;
+}
+a{
+    color: black;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 5px;
+    background-color: #a9a389;
+}
