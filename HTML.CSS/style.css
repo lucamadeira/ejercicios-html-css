@@ -1,0 +1,54 @@
+h1{
+    color: rgba(255, 0, 0, 0.772);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    
+}
+/* per modificare singola mente se debe mettere nel palagrafo class"nome della modifica che abbiamo messo nel CSS" ejemp 
+questo elemeto letter-spacing serve per mettre spazio tra lettere */
+
+.home-spazio {
+    letter-spacing: 2px;
+    
+
+}
+ 
+/* word-spacing: serpara le parole ejemp  se po ultiliza o com px ejemp */
+
+.spazio-tra-le-parole {
+   word-spacing: 23px;
+   
+}
+
+/* line-height: viene ultilizato anche per dare spazio tra le riga ejempl posso anche colegare insieme alla stesa riga 
+
+text-indent: serve per metttere il rientro de un testo */
+
+/* white-space: pre; serve per madare a capo il texto que se debe mandara directamente del testo in HTML */
+
+/* white-space: pre wrap; serve per mandare a capo automatica se supere la line a de zona  */
+
+/*  white-space: pre line;serve per redurre le line tra le parole e andare a capo
+ */
+
+ /*  text-transform:uppercase;serve per transforma tutto il testo in maiuscula  */
+
+ 
+ .spazio-riga{
+    line-height: 1.5;
+    text-indent: 2px;
+    white-space: pre;
+    white-space: wrap;
+    white-space: pre line;
+    text-transform: uppercase;
+  
+  }
+  #title{
+    white-space: pre line;
+    text-transform: uppercase;
+
+  }
+
+  .alineamento{ 
+    text-align:center;
+  }
