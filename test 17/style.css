@@ -4,7 +4,7 @@
 }
 html, body{
     min-height: 100vh;
-    background-color: rgba(240, 248, 255, 0.654);
+    background-color: rgba(147, 150, 157, 0.407);
 
 }
 header{
@@ -19,6 +19,40 @@ header > h1 {
 header, p{
     padding-bottom: 50px;
 }
- a {
+
+    
+
+a{
+    
     color: white;
+    text-decoration: none;
+    font-weight: bolder
+}
+ 
+header > a,:hover footer a:hover  {
+text-decoration: underline;
+
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+section.image > p{
+    background-color: rgb(105, 101, 101);
+    width: 300px;
+}
+
+section.image {
+    background-color: rgb(130, 126, 123);
+    color: white
+
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
