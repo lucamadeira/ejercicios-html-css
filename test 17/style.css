@@ -67,7 +67,8 @@ section {
 
 section.image > p {
   background-color: rgba(105, 101, 101, 0.48);
-  width: 300px;
+  display: inline-block;
+  padding: 5px;
 
   
 }
