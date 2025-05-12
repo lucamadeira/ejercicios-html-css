@@ -8,110 +8,178 @@
         table{
             font-family: Arial, Helvetica, sans-serif;
             border: 1px solid black;
-            width: 600px;
+            width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
+        /* caption ser para fazer comentarios na tabela na parte superior da tabela */
+
+        caption{
+            font-size: 2em;
+            background-color: rgb(122, 117, 117);
+            font-weight: bolder;
+        }
+
+        /* essa configuracao serve pra que o encapeçado role a medida que role a pagina ser principalmente para tabelas largas tem que colocar no table{ position:relative; e dps tudo o que esta no therd > tr > td { abaixo }} */
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(122, 117, 117) ;
+        }
+        
+        /* :nth-child(2n) serve pra fazer o efeito zebrado que se pode colocar de altras colores e tambem agregar oltro esse (2n) se pode muda para de numero de casalas que queremos pintar  */
+
+        tbody > tr:nth-child(2n){
+            background-color: rgb(154, 145, 145);
+        }
+        tfoot > tr, th {
+            background-color: rgb(141, 135, 135);
+        }
+            
+        .color{
+            background-color: rgb(141, 135, 135);
+            
+        }
+        .nm{
+            text-align: right;
+        }
 
        th,tr,td{
             border: 1px solid black;
             border-collapse: collapse;
             width: 50px;
+            padding: 10px;
         }
     </style>
 </head>
 <body>
     <table>
-        <thead>
+        <caption>populacao das unidades federativas</caption>
+        <thead >
             <tr>
-                <th>estado</th>
-                <th>populacao</th>
+                <th class="color" scope="col" >estado</th>
+                <th class="color" scope="col" >populacao</th>
             </tr>
-        </thead>
+        </thead >
         <tbody>
             <tr>
                 <td>sao paulo</td>
+                <td class="nm">45 973 194</td>
             </tr>
             <tr>
                 <td>minas gerais</td>
+                <td class="nm">21 322 691</td>
+            </tr>
+            <tr>
+                <td>rio de janeiro</td>
+                <td class="nm">17 219 679</td>
             </tr>
             <tr>
                 <td>bahia</td>
+                <td class="nm">14 850 513</td>
             </tr>
             <tr>
                 <td>parana</td>
+                <td class="nm">8 664 306</td>
             </tr>
             <tr>
                 <td>rio grande</td>
+                <td class="nm">11 824 665</td>
             </tr>
             <tr>
                 <td>permanbico</td>
+                <td class="nm">11 229 915</td>
             </tr>
             <tr>
                 <td>ceara</td>
+                <td class="nm">9 233 656</td>
             </tr>
             <tr>
                 <td>para</td>
+                <td class="nm">8 664 306</td>
             </tr>
             <tr>
                 <td>santa catarina</td>
+                <td class="nm">8 058 441</td>
             </tr>
             <tr>
                 <td>maranhao</td>
+                <td class="nm">7 350 483</td>
             </tr>
             <tr>
                 <td>goias</td>
+                <td class="nm">7 350 483</td>
             </tr>
             <tr>
                 <td>amazona</td>
+                <td class="nm">7 010 960</td>
             </tr>
             <tr>
                 <td>espirito santo</td>
+                <td class="nm">4 102 129</td>
             </tr>
             <tr>
                 <td>paraiba</td>
+                <td class="nm">4 145 040</td>
             </tr>
             <tr>
                 <td>rio grande do norte</td>
+                <td class="nm">3 446 071</td>
             </tr>
             <tr>
                 <td>mato grosso</td>
+                <td class="nm">3 836 399</td>
             </tr>
             <tr>
                 <td>alagoas</td>
+                <td class="nm">3 220 104</td>
             </tr>
             <tr>
                 <td>piaui</td>
+                <td class="nm">3 375 646</td>
             </tr>
             <tr>
                 <td>distrito federal</td>
+                <td class="nm">2 982 818</td>
             </tr>
             <tr>
                 <td>mato grosso do sur</td>
+                <td class="nm">2 982 818</td>
             </tr>
             <tr>
                 <td>sergipe</td>
+                <td class="nm">2 291 077</td>
             </tr>
             <tr>
                 <td>rondonia</td>
+                <td class="nm">1 746 227</td>
             </tr>
             <tr>
                 <td>tocantis</td>
+                <td class="nm">1 577 342	</td>
             </tr>
             <tr>
                 <td>acre</td>
+                <td class="nm">880 631</td>
             </tr>
             <tr>
                 <td>amapa</td>
+                <td class="nm">802 837</td>
             </tr>
             <tr>
                 <td>roraima</td>
-            </tr>
-            <tr>
-                <td></td>
+                <td class="nm">716 793	</td>
             </tr>
             
         </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">totais de habitantes</th>
+                <td class="nm"><strong>212 583 750</strong></td>
+            </tr>
+        </tfoot>
     </table>
 </body>
 </html>
