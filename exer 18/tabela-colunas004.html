@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colunas cor</title>
+    <style>
+        table{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            border-collapse: collapse;
+            width: 500px;
+            height: 200px;
+        }
+        tr,th,td{
+            border: 2px solid black;   
+        }
+        .gray{
+            background-color: gray;
+        }
+        .blu{
+            background-color: rgb(136, 191, 227);
+        }
+        .green{
+            background-color: rgb(105, 207, 153);
+        }
+        .violet{
+            background-color: violet;
+        }
+    </style>
+</head>
+<body>
+   
+
+    <h1>Exercicio de colunas cor con colgroup</h1>
+
+    <table>
+         <colgroup>
+
+        <col class="gray"> 
+        <col class="blu"> 
+        <col class="green"> 
+        <col class="violet">
+
+    </colgroup>
+
+        <tr >
+            <th>nome</th>
+            <th>apellido</th>
+            <th>edade</th>
+            <th>sexo</th>
+            
+        </tr>
+        <tr>
+            <td>luca</td>
+            <td>madeira</td>
+            <td>21</td>
+            <td>mascolino</td>
+        </tr>
+        <tr>
+            <td>00</td>
+            <td>00</td>
+            <td>00</td>
+            <td>00</td>
+        </tr>
+        <tr>
+            <td>00</td>
+            <td>00</td>
+            <td>00</td>
+            <td>00</td>
+        </tr>
+    </table>
+    
+</body>
+</html>

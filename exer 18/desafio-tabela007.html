@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+           font-family: Verdana, Geneva, Tahoma, sans-serif;
+           width: 600px;
+           height: 300px;
+           border-collapse: collapse;
+           text-align: center;
+        }
+        thead > tr > th{
+            border: 2px solid black;
+            border-right-color: gray;
+           
+        }
+        tr,td,th{
+            border: 2px solid black;
+            
+        }
+        th{
+            background-color: rgb(177, 175, 175);
+            color: white; 
+            padding-top: 10px;
+           padding-bottom: 10px;
+        
+        }
+        #color{
+            background-color: white;
+            color: black;
+        }
+        #tamanho{
+            padding: -50px;
+        }
+        
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Area</th>
+                <th>Disciplinas</th>
+                 <td colspan="2" id="tamanho" >Notas</td>
+                <th>MEdias</th>
+                
+                
+            </tr>
+
+        </thead>
+        <tbody>
+            
+                
+                <tr>
+                    <th rowspan="5" id="color"> Exatas</th>
+                    <td>Matematicas</td>
+                    <td>nota 1</td>
+                    <td> Nota 2</td>
+                    <td></td>
+                    
+
+                </tr>
+                <tr>
+                    <td>Fisica</td>
+                    <td>00</td>
+                    <td>00</td>
+                    <td>00</td>
+                </tr>
+                <tr>
+                    <td>Quimica</td>
+                    
+                    <td>00</td>
+                    <td>00</td>
+                    <td>00</td>
+                </tr>
+                <tr>
+                    <td>Biologia</td>
+                    <td>00</td>
+                    <td>00</td>
+                    <td>00</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>00</td>
+                    <td>00</td>
+                    <td>00</td>
+                </tr>
+               
+            
+            <tr>
+                <th colspan="4">Media de exatas</th>
+                <td>00</td>
+            </tr>
+        
+                
+                
+                <tr>
+                     <th rowspan="2" id="color">Humanas</th>
+                    <td>Historia</td>
+                    <td>00</td>
+                    <td>00</td>
+                    <td>00</td>
+                </tr>
+                 <tr>
+                    <td>Geografia</td>
+                    <td>00</td>
+                    <td>00</td>
+                    <td>00</td>
+                    
+                </tr> 
+                
+
+              
+            
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4">Media de Humanas</th>
+                <td>00</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
