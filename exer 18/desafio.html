@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desafio de tabela</title>
+    <style>
+       table{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        width: 600px;
+        height: 300px;
+        border-collapse: collapse;
+        
+       }
+       tr,th,td{
+        border: 1px solid black;
+        height: 40px;
+        text-align: center;
+
+       }
+      
+    
+    
+    </style>
+</head>
+<body>
+    <h1>Exercicio de tabelas</h1>
+
+    <table>
+       <thead>
+        <tr>
+            <th scope="col">Grupos</th>
+            <th scope="col">Nomes</th>
+            <th colspan="3" scope="colgroup">Filmes</th>
+        </tr>
+       </thead>
+
+        <tbody>
+        <tr>
+        <th rowspan="3" scope="rowgroup">Mulheres</th>
+        <td>ana Maria Santos</td>
+        <td>Alien</td>
+        <td>Rambo</td>
+        <td>vibgado</td>
+       </tr>
+
+       <tr>
+        <td>Beatriz Melo</td>
+        <td>Hulk</td>
+        <td>inception</td>
+        <td>Batman</td>
+       </tr>
+
+       <tr>
+        <td>Cladia Melo</td>
+        <td>Oblivion</td>
+        <td>Matrix</td>
+        <td>Big Hero</td>
+       </tr>
+
+       <tr>
+        <th rowspan="3" scope="rowgroup">Homens</th>
+        <td>Bruno Mendonça</td>
+        <td>Intocaveis</td>
+        <td>Amnesia</td>
+        <td>Gladiador</td>
+       </tr>
+
+       <tr>
+        <td>Daniel Lourenço</td>
+        <td>Wall-E</td>
+        <td>Oldboy</td>
+        <td>Dangal</td>
+       </tr>
+
+       <tr>
+        <td>Fabiano Mota</td>
+        <td>Star Wars V</td>
+        <td>Taxi Driver</td>
+        <td>Toy Story</td>
+       </tr>
+
+       
+        </tbody>
+    </table>
+    
+</body>
+</html>
