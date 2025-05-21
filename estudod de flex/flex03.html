@@ -9,11 +9,11 @@
             display : flex;
             background-color: #65d27d;
             height: 100px;
-            flex-flow: row-reverse wrap;
+            flex-flow: row wrap;
             
         }
         .tem{
-               
+               /* flex:auto; */
                background-color: rgb(162, 80, 80);
                border: 1px solid black;
                text-align: center;
@@ -24,6 +24,8 @@
     <h1> estudos de flexbox</h1>
     <!-- display flex serve para deixa a conteiner adptavel a qualquer tipo de telas o todod o que esta dentro do conteiner items  -->
      <!-- flex-flow serve para fazer um short hand em manera que as modificas fiquen en una so linea e para usar o flex-flow tem que primeiro colocar uma direçao para o conteiner e depos voce pode colocar as modificas como a quebra de colonas ect... -->
+
+     <!--  tambem tem a tag flex-auto que que colocarmos nos filhos do conteiners (items) serve para que cubra todo o spaço do conteineine(box/caixa) todas as tags de black como (div)-->
     <div class="conteiner">
         <div class="tem">1 teste de box</div>
         <div class="tem">2 teste de box</div>
