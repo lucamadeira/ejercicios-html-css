@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estudos de flexbox</title>
+    <style>
+        .conteiner{
+            display : flex;
+            background-color: #65d27d;
+            height: 400px;
+            flex-direction: row wrap;
+            align-items: flex-start;
+        }
+        .tem{
+              
+               background-color: rgb(162, 80, 80);
+               border: 1px solid black;
+               text-align: center;
+               padding: 10px;
+        }
+         #qitems{
+            order: 1;
+        }
+        #witems{
+            order: 2;
+        }
+        #eitems{
+            order: -1;
+        }
+        #ritems{
+            order: 4;
+        }
+        #titems{
+            order: 5;
+        }
+        #yitems{
+            order: 1;
+        }
+        #uitems{
+            order: 7;
+        }
+        #iitems{
+            order: 0;
+        }
+        #oitems{
+            order: 9;
+        }
+        #pitems{
+            order: -3;
+        }
+    </style>
+</head>
+<body>
+    <h1> estudos de flexbox</h1>
+    <!-- propiedade orden para ordenar os items  -->
+    <div class="conteiner">
+        <div id="qitems" class="tem">1</div>
+        <div id="witems" class="tem">2</div>
+        <div id="eitems" class="tem">3</div>
+        <div id="ritems" class="tem">4</div>
+        <div id="titems" class="tem">5</div>
+        <div id="yitems" class="tem">6</div>
+        <div id="uitems" class="tem">7</div>
+        <div id="iitems" class="tem">8</div>
+        <div id="oitems" class="tem">9</div>
+        <div id="pitems" class="tem">10</div>
+        </div>           
+</body>
+</html>
