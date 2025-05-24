@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estudos de flexbox</title>
+    <style>
+        .conteiner{
+            display : flex;
+            background-color: #65d27d;
+            flex-flow: row nowrap;
+            
+        }
+        .tem{
+               
+               background-color: rgb(162, 80, 80);
+               border: 1px solid black;
+               text-align: center;
+               padding: 10px;
+              
+              
+              
+        }
+        div#cxa{
+            flex-shrink:1 ;
+            flex-grow:0 ;
+        }
+        div#cxb{
+            flex-shrink:1 ;
+            flex-grow:1 ;
+        }
+        div#cxc{
+            flex-shrink:1 ;
+            flex-grow:0 ;
+        }
+        div#cxd{
+            flex-shrink:1 ;
+            flex-grow:2 ;
+        }
+        div#cxe{
+            flex-shrink:1 ;
+            flex-grow: 0;
+        }
+        div#cxq{
+            flex-shrink:1 ;
+            flex-grow: 4;
+        }
+        div#cxw{
+            flex-shrink:1 ;
+            flex-grow: 0;
+        }
+        div#cxr{
+            flex-shrink:1 ;
+            flex-grow: 2;
+        }
+    </style>
+</head>
+<body>
+    <h1> estudos de flexbox</h1>
+    <!-- se pode colocar  valores em cada flex-shrink/flex-grow singolarmente usando o class/id 1 a 4 mas tem que usar con atençao por nao que dizer que voce colocar 6 grow vai crecer as 6 veces nao ele tem a posilibilidad de crecer 6 veces mais tem que olhar o tamanho do item o mesmo vale para o flex shrink -->
+   
+    <div class="conteiner">
+        <div id="cxa" class="tem">1</div>
+        <div id="cxb" class="tem">2</div>
+        <div id="cxc" class="tem">3</div>
+        <div id="cxd" class="tem">4</div>
+        <div id="cxe" class="tem">5</div>
+        <div id="cxq" class="tem">6</div>
+        <div id="cxw" class="tem">7</div>
+        <div id="cxr" class="tem">8</div>
+       
+              
+
+
+
+
+
+
+      
+        </div>           
+</body>
+</html>
