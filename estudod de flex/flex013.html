@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>estudos de flexbox</title>
+    <style>
+      .conteiner{
+
+          display: flex;
+          background-color: #65d27d;
+            flex-flow: row nowrap;
+
+       
+
+      }
+      .tem{
+
+             background-color: rgb(162, 80, 80);
+             border: 1px solid black;
+             text-align: center;
+             padding: 10px;
+                
+
+
+
+      }
+      div#cxa{
+        flex: 2;
+      }
+      div#cxb{
+      flex: 1;
+      }
+      div#cxc{
+       flex: none;  /* flex:none serve para que o item no ter nengum tipo de flexibilidade */
+
+      }
+      div#cxd{
+       flex: auto; /* flex: auto e para que o item tenho o valor padrao flex: 0 1 auto */
+      }
+      div#cxe{
+        flex: initial; /* flex:initial e para que o item tenho o mesmo valor inicial  */
+      }
+      div#cxq{
+        flex: 2;
+      }
+      div#cxw{
+        flex: initial;     
+        /*  flex:initial e para que o item tenho o mesmo valor inicial  */
+      }
+      div#cxr{
+        flex: 1;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>estudos de flexbox</h1>
+    <!-- e possivel fazer dessa menera un jeito mais facil e simplis con o flex: e o valor oara almentar o tamanho do item / o flex:none serve para que o item no ter nengum tipo de flexibilidade e o / flex:auto e para que o item tenho o valor padrao flex: 0 1 auto / o flex:initial e para que o item tenho o mesmo valor inicial  -->
+
+    <div class="conteiner">
+      <div id="cxa" class="tem">1</div>
+      <div id="cxb" class="tem">2</div>
+      <div id="cxc" class="tem">3</div>
+      <div id="cxd" class="tem">4</div>
+      <div id="cxe" class="tem">5</div>
+      <div id="cxq" class="tem">6</div>
+      <div id="cxw" class="tem">7</div>
+      <div id="cxr" class="tem">8</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>estudos de flexbox</title>
+    <style>
+      .conteiner{
+
+          display: flex;
+          background-color: #65d27d;
+            flex-flow: row nowrap;
+
+       
+
+      }
+      .tem{
+
+             background-color: rgb(162, 80, 80);
+             border: 1px solid black;
+             text-align: center;
+             padding: 10px;
+                
+
+
+
+      }
+      div#cxa{
+        /* flex-grow:0 ;
+          flex-shrink:1 ;
+          flex-basis:200px; */
+          flex: 0 1 100px; /* flex-shrink, flex-grow, flex-basis */
+      }
+      div#cxb{
+        /* flex-grow:1 ;
+          flex-shrink:1 ;
+          flex-basis:200px; */
+          flex: 1 1 100px; /* flex-shrink, flex-grow, flex-basis */
+      }
+      div#cxc{
+        /* flex-grow:0 ;
+          flex-shrink:1 ;
+          flex-basis:200px; */
+          flex: 0 0 100px; /* flex-shrink, flex-grow, flex-basis */
+      }
+      div#cxd{
+        /* flex-grow:2 ;
+          flex-shrink:1 ;
+          flex-basis:200px; */
+          flex: 2 0 200px; /* flex-shrink, flex-grow, flex-basis */
+      }
+      div#cxe{
+        /* flex-grow: 0;
+          flex-shrink:1 ;
+          flex-basis:200px; */
+          flex: 0 1 200px; /* flex-shrink, flex-grow, flex-basis */
+      }
+      div#cxq{
+        /* flex-grow: 4;
+          flex-shrink:1 ;
+          flex-basis:200px; */
+          flex: 4 1 200px; /* flex-shrink, flex-grow, flex-basis */
+      }
+      div#cxw{
+        /* flex-grow: 0;
+          flex-shrink:1 ;
+          flex-basis:200px; */
+          flex: 0 1 200px; /* flex-shrink, flex-grow, flex-basis */
+      }
+      div#cxr{
+         /* flex-grow: 2;
+          flex-shrink:1 ;
+          flex-basis:200px; */
+          flex: 2 1 200px; /* flex-shrink, flex-grow, flex-basis */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>estudos de flexbox</h1>
+    <!-- e possivel fazer dessa menera un jeito mais facil e simplis  -->
+
+    <div class="conteiner">
+      <div id="cxa" class="tem">1</div>
+      <div id="cxb" class="tem">2</div>
+      <div id="cxc" class="tem">3</div>
+      <div id="cxd" class="tem">4</div>
+      <div id="cxe" class="tem">5</div>
+      <div id="cxq" class="tem">6</div>
+      <div id="cxw" class="tem">7</div>
+      <div id="cxr" class="tem">8</div>
+    </div>
+  </body>
+</html>
