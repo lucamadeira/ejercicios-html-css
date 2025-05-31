@@ -1,0 +1,25 @@
+body{
+    background-color: brown;
+}
+
+header{
+    height: 300px;
+}
+header > nav {
+display: flex;
+ flex-flow: column wrap;
+    justify-content: center;
+    width: 90vw;
+    
+
+}
+
+header > a{
+    display: flex;
+align-items: center;
+margin: 10px;
+width: 90vw;
+    
+
+
+}
