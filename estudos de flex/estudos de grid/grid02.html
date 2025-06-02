@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estudos de grid</title>
+    <style>
+        div.container {
+            border: 3px solid brown;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: 100px 100px 100px; 
+            gap: 10px;
+    
+        }
+       
+        /* grid-template-rows: 100px 100px serve para fazer linhas com tamanhos especificos */
+        
+        /* grid-template-columns: auto serve para fazer colunas */
+        
+        div.items{
+            border: 2px solid blueviolet;
+            padding: 10px;
+        }
+        /* aling-items: star serve para alinear os items na parte superiar vertical do conteido  */
+
+        /* aling-items: center serve para alinear os items na parte central vertical do conteido */
+
+        /* aling-items: end serve para alinear os items na parte inferior vertical do conteido */
+
+        /* justify-items: start serve para alinear os items na parte horizontal do conteiner */
+
+        /* justify-items: center serve para alinear os items na parte horizontal do conteiner */
+
+        /* justify-items: end serve para alinear os items na parte horizontal do conteiner */
+
+        /* justify-items: stretch serve para alinear os items na parte horizontal do conteiner */
+
+        /* justify-content: start serve para alinear os items na parte horizontal do conteiner */
+
+        /* justify-content: center serve para alinear os items na parte horizontal do conteiner */
+
+        /* justify-content: end serve para alinear os items na parte horizontal do conteiner */
+
+        /* justify-content: space-between serve para alinear os items na parte horizontal do conteiner */
+
+        /* justify-content: space-around serve para alinear os items na parte horizontal do conteiner */
+
+        /* justify-content: space-evenly serve para alinear os items na parte horizontal do conteiner */
+        
+        /* align-content: start serve para alinear os items na parte vertical do conteiner */
+
+        /* align-content: center serve para alinear os items na parte vertical do conteiner */
+
+        /* align-content: end serve para alinear os items na parte vertical do conteiner */
+        
+        /* align-content: space-between serve para alinear os items na parte vertical do conteiner */
+
+        /* align-content: space-around serve para alinear os items na parte vertical do conteiner */
+
+        /* align-content: space-evenly serve para alinear os items na parte vertical do conteiner */
+
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="items">A</div>
+    <div class="items">B</div>
+    <div class="items">C</div>
+    <div class="items">D</div>
+    <div class="items">E</div>
+    <div class="items">F</div>
+    <div class="items">G</div>
+   </div>
+</body>
+</html>
