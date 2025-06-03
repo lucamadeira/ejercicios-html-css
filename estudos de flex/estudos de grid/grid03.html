@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estudos de grid</title>
+    <style>
+        div.container {
+            border: 3px solid brown;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            /* grid-template-columns: 1fr 20% 100px tam bem e possivel agregar mais  */
+            /* grid-templade-columns: repeat (3, 1fr 20%) */
+            /* grid-template-columns: reapeat (3, auto) */
+            grid-template-rows: repeat(3,100px);
+            /* grid-template-rows: reapeat (3, auto) */
+            grid-auto-flow: row; /column
+            grid-row: 100px;
+            gap: 10px;
+
+    
+        }
+        div.items{
+            border: 2px solid blueviolet;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="items">A</div>
+    <div class="items">B</div>
+    <div class="items">C</div>
+    <div class="items">D</div>
+    <div class="items">E</div>
+    <div class="items">F</div>
+    <div class="items">G</div> 
+    <div class="items">H</div>
+    
+   </div>
+</body>
+</html>
