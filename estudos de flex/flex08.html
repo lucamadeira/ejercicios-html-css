@@ -5,12 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>estudos de flexbox</title>
     <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgba(0, 255, 255, 0.414);
+            color: rgb(72, 19, 158);
+        }
         .conteiner{
             display : flex;
             background-color: #65d27d;
             height: 400px;
+            width: 90%;
+            margin: auto;
             flex-direction: row wrap;
             align-items: flex-start;
+          
         }
         .tem{
               
@@ -18,21 +30,41 @@
                border: 1px solid black;
                text-align: center;
                padding: 30px;
+               margin: 10px;
+               color: white;
         }
          #qitems{
            align-self: stretch;
+          flex: 1 2 10px;
+          order:5 ;
+          background-color: blueviolet;
+          
         }
         #witems{
            align-self: auto;
+           /* margin: 10px ; */
+           order: 1;
+           background-color:black;
+          
+          
         }
         #eitems{
             align-self: flex-end;
+            /* margin: 10px; */
+            order: 4;
+            background-color: #fff;
         }
         #ritems{
-         align-self: center;
+         align-self: stretch;
+         /* margin: 10px; */
+         order: 2 ;
+         background-color: #b3d265;
+         
         }
         #titems{
             align-self: center;
+            order: -1;
+            background-color: #fff;
            
         }
        
